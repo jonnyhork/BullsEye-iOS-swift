@@ -14,7 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var slider: UISlider!
     var targetValue: Int = 0
     @IBOutlet weak var targetLabel: UILabel!
-
+    var score: Int = 0
+    @IBOutlet weak var scoreLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         currentValue = lroundf(slider.value)
@@ -25,6 +27,12 @@ class ViewController: UIViewController {
         targetValue = 1 + Int(arc4random_uniform(100))
         currentValue = 50
         slider.value = Float(currentValue)
+        updateLabels()
+    }
+    
+    func updateLabels() {
+        targetLabel.text = String(targetValue)
+        scoreLabel.text = String(score)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,11 +46,16 @@ class ViewController: UIViewController {
 
     @IBAction func showAlert() {
     
-    let message = "The value of the slider is \(currentValue)" +
-        "\nThe Target Value is: \(targetValue) "
+    let difference:Int = abs(currentValue - targetValue)
+    let points = 100 - difference
+    
+    score += points
+    
+    let message = "The difference is: \(difference)" +
+        "\nYou scored \(points) points"
     
     let alert = UIAlertController(title: "Slider Value", message: message, preferredStyle: .alert)
-    let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
+    let action = UIAlertAction(title: "Play Again", style: .default, handler: nil)
     
         alert.addAction(action)
     
