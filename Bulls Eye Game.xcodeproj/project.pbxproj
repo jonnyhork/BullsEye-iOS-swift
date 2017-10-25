@@ -14,6 +14,7 @@
 		F4B18EF61F9FD92A00927AA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B18EF41F9FD92A00927AA5 /* LaunchScreen.storyboard */; };
 		F4B18F011F9FD92A00927AA5 /* Bulls_Eye_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B18F001F9FD92A00927AA5 /* Bulls_Eye_GameTests.swift */; };
 		F4B18F0C1F9FD92A00927AA5 /* Bulls_Eye_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B18F0B1F9FD92A00927AA5 /* Bulls_Eye_GameUITests.swift */; };
+		F4B18F1A1FA0383D00927AA5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B18F191FA0383D00927AA5 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F4B18F071F9FD92A00927AA5 /* Bulls Eye GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bulls Eye GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B18F0B1F9FD92A00927AA5 /* Bulls_Eye_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bulls_Eye_GameUITests.swift; sourceTree = "<group>"; };
 		F4B18F0D1F9FD92A00927AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B18F191FA0383D00927AA5 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				F4B18EEB1F9FD92A00927AA5 /* AppDelegate.swift */,
 				F4B18EED1F9FD92A00927AA5 /* ViewController.swift */,
+				F4B18F191FA0383D00927AA5 /* AboutViewController.swift */,
 				F4B18EEF1F9FD92A00927AA5 /* Main.storyboard */,
 				F4B18EF21F9FD92A00927AA5 /* Assets.xcassets */,
 				F4B18EF41F9FD92A00927AA5 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B18F1A1FA0383D00927AA5 /* AboutViewController.swift in Sources */,
 				F4B18EEE1F9FD92A00927AA5 /* ViewController.swift in Sources */,
 				F4B18EEC1F9FD92A00927AA5 /* AppDelegate.swift in Sources */,
 			);
